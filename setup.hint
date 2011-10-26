@@ -1,0 +1,8 @@
+category: Mail Xfce
+requires: ca-certificates lynx msmtp libcairo2 libcanberra0 libdb5.2 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libnotify4 libopenssl098 libpango1.0_0 libsoup2.4_1 libunique1.0_0 libwebkitgtk1.0_0
+sdesc: "Xfce mail client"
+ldesc: "Postler is a lean mail interface. Messages are read from Maildir 
+folders, HTML is rendered, composed and spell-checked with WebKitGTK+. 
+The application consists of independent modules, the reader, viewer and 
+the composer. Each module runs separately. No network access occurs from 
+within the user interface by default, offline access is integral."

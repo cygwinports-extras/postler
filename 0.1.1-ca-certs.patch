@@ -1,0 +1,10 @@
+--- origsrc/postler-0.1.1/postler/postler-accounts.vala	2011-03-20 20:06:07.000000000 -0500
++++ src/postler-0.1.1/postler/postler-accounts.vala	2011-10-25 23:08:00.365024300 -0500
+@@ -154,6 +154,7 @@ public class Postler.Accounts : GLib.Obj
+         "/etc/pki/tls/certs/ca-bundle.crt",
+         "/etc/ssl/certs/ca-certificates.crt",
+         "/etc/ssl/certs/ca-bundle.crt",
++        "/usr/ssl/certs/ca-bundle.crt",
+         "/usr/local/share/certs/ca-root-nss.crt"
+     };
+ 

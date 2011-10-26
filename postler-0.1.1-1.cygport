@@ -1,0 +1,13 @@
+inherit xfce4 waf
+
+
+PATCH_URI="
+	0.1.1-ca-certs.patch
+	0.1.1-no-libnsl.patch
+	0.1.1-vala.patch
+"
+
+WAF_CONFIGURE_FLAGS="--disable-libindicate"
+
+# waf looks for msmtp, which is in /usr/sbin
+PATH="/usr/sbin:$PATH"

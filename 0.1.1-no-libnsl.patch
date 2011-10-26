@@ -1,0 +1,11 @@
+--- origsrc/postler-0.1.1/wscript	2011-03-20 20:06:07.000000000 -0500
++++ src/postler-0.1.1/wscript	2011-06-02 19:28:42.490774100 -0500
+@@ -143,7 +143,7 @@ def configure (conf):
+                    includes=['/usr/local/include/db42'],
+                    libpath=['/usr/local/lib/db42'], lib='db', mandatory=True)
+     else:
+-        check_function ('inet_ntoa', 'arpa/inet.h', 'nsl')
++        check_function ('inet_ntoa', 'arpa/inet.h')
+         check_function ('dlopen', 'dlfcn.h', 'dl')
+         check_function ('db_create', 'db.h', 'db')
+     check_pkg ('openssl')
