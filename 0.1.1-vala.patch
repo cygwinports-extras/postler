@@ -2,6 +2,15 @@ Vala 0.12 is stricter about callbacks having a return value
 
 --- origsrc/postler-0.1.1/postler/postler-content.vala	2011-03-20 20:06:07.000000000 -0500
 +++ src/postler-0.1.1/postler/postler-content.vala	2011-10-25 23:00:39.977884700 -0500
+@@ -442,7 +442,7 @@ public class Postler.Content : WebKit.We
+         TimeVal time = new TimeVal ();
+         int offset = 0;
+         if (parsed != null) {
+-            parsed.to_timeval (time);
++            time = parsed.to_timeval ();
+             offset = parsed.offset;
+         }
+         return new DateTime.from_timeval_local (time).add_minutes (offset);
 @@ -1086,7 +1086,7 @@ public class Postler.Content : WebKit.We
                      var escaped = GLib.Regex.escape_string (" " + emoticon.token);
                      var regex = new GLib.Regex (escaped);
